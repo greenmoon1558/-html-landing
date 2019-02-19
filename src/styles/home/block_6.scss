@@ -1,0 +1,114 @@
+.block_6 {
+  display: flex;
+  flex-direction: column;
+  &-item {
+    width: 100%;
+    background-color: $block_6-blue;
+    min-height: 44rem;
+    @media all and (max-width: 32rem) {
+      min-height: auto;
+    }
+    &:first-child {
+      width: 100%;
+    }
+  }
+  &__ {
+    &info {
+      padding: 0 3rem;
+      @media all and (max-width: 32rem) {
+        padding: 0 1rem;
+      }
+      min-width: auto;
+    }
+    &img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &headline {
+      color: $white;
+      @include headline();
+      margin: 0;
+      display: inline-block;
+      letter-spacing: 0.15rem;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      &:after {
+        content: "";
+        display: block;
+        width: 12rem;
+        margin: 0.75rem 1.75rem 0px auto;
+        height: 0.4rem;
+        background-color: $blue;
+      }
+      &--small {
+        text-align: center;
+        font-style: italic;
+        font-weight: 400;
+        @include text();
+        color: #fff;
+        margin: 3.25rem 0 2.5rem;
+        @media all and (min-width: 90rem) {
+          margin: 2.75vmax 0 2.1vmax;
+        }
+      }
+    }
+    &text {
+      color: $white;
+      font-weight: 400;
+      @include text();
+      margin: 1.25rem auto 4rem;
+      @media all and (min-width: 90rem) {
+        margin: 1.05vmax 0 3.35vmax;
+      }
+      @media all and (max-width: 48rem) {
+        min-width: 90vw;
+      }
+      min-width: 50rem;
+      width: 40vw;
+      margin-right: auto;
+    }
+    @include button();
+    &btn {
+      display: block;
+      margin: 0 auto 4rem;
+      background-color: $blue;
+      &:after {
+        background-color: $block_6-blue-2;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 64rem) {
+  .block_6 {
+    flex-direction: row;
+    &-item {
+      width: 49.33%;
+      &:first-child {
+        width: 50.67%;
+      }
+    }
+    &__ {
+      &text,
+      &btn {
+        margin-left: 0;
+        margin-bottom: 4rem;
+      }
+      &headline {
+        left: 0%;
+        transform: translateX(0%);
+        &--small {
+          text-align: left;
+        }
+      }
+      &info {
+        padding: 0;
+        padding-left: 3rem;
+        min-width: 59.2rem;
+      }
+    }
+  }
+}

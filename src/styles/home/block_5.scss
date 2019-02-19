@@ -1,0 +1,75 @@
+.block_5 {
+  min-height: 71.2rem;
+  height: 55vw;
+  @media all and (max-width: 32rem) {
+    min-height: 60rem;
+  }
+  &--blue {
+    background-color: $block_5-blue;
+    min-height: 60rem;
+    height: 50vw;
+    position: relative;
+  }
+  &__ {
+    &headline {
+      @include headline();
+      color: $white;
+      text-align: center;
+      margin: 0;
+      padding: 5rem 1rem 1rem;
+    }
+    &backgorund {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      .block_5__img {
+        width: 100vw;
+        min-height: 57rem;
+        object-fit: cover;
+      }
+    }
+    &front {
+      position: absolute;
+      bottom: -5rem;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      .block_5__img {
+        width: 63vw;
+        object-fit: cover;
+        min-width: 75.5rem;
+        min-height: 50rem;
+        @media all and (max-width: 48rem) {
+          min-width: 95vw;
+          object-fit: contain;
+        }
+      }
+      .mask {
+        display: flex;
+        width: 62%;
+        min-width: 74rem;
+        min-height: 48.4rem;
+        margin: 0 auto;
+        &-wrapper {
+          position: absolute;
+          bottom: 1rem;
+          left: 0;
+          width: 100vw;
+          z-index: 2;
+        }
+        &-item {
+          width: 33.33%;
+          opacity: 0.3;
+          height: 100%;
+          &:first-child {
+            background-color: $blue;
+          }
+          background-color: $block_5-blue;
+          &:last-child {
+            background-color: $block_5-blue-2;
+          }
+        }
+      }
+    }
+  }
+}

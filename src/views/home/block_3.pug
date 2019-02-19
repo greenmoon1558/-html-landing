@@ -1,0 +1,41 @@
+section.block_3
+  a(name="about")
+  .block_3__headline-wrapper
+    h1.block_3__headline Support For People Of All Walks of Life
+    h2.block_3__headline--small 
+      | Children as young as 2 years old may begin to 
+      | develop behaviors which need extra support and attention.
+  -var imgPath = "img/block_3/"
+  .block_3__slider
+    .block_3__slide
+      picture.block_3__picture
+        source(
+          srcset=imgPath+"img1.webp 1x, "+imgPath+"img1@2x.webp 2x", 
+          media="(min-width: 425px)", 
+          type="image/webp")
+        source(
+          srcset=imgPath+"img1.png 1x, "+imgPath+"img1@2x.png 2x", 
+          media="(min-width: 425px)")
+        source(
+          srcset=imgPath+"img1--sm.webp 1x, "+imgPath+"img1--sm@2x.webp 2x", 
+          type="image/webp")
+        img.block_3__img(
+          src=imgPath+"img1--sm.png", 
+          srcset=imgPath+"img1--sm@2x.png 2x", 
+          alt="people who follow each other")
+    .block_3__slide
+      picture.block_3__picture
+        source(
+          srcset=imgPath+"img2.webp 1x, "+imgPath+"img2@2x.webp 2x", 
+          media="(min-width: 425px)", 
+          type="image/webp")
+        source(
+          srcset=imgPath+"img2.png 1x, "+imgPath+"img2@2x.png 2x", 
+          media="(min-width: 425px)")
+        source(
+          srcset=imgPath+"img2--sm.webp 1x, "+imgPath+"img2--sm@2x.webp 2x", 
+          type="image/webp")
+        img.block_3__img(
+          src=imgPath+"img2--sm.png", 
+          srcset=imgPath+"img2--sm@2x.png 2x", 
+          alt="people who follow each other")

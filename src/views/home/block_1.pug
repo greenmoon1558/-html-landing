@@ -1,0 +1,27 @@
+section.block_1
+  a(name="home")
+  div.block_1__background
+  -var imgPath = "img/block_1/"
+  picture.block_1__img-wrapper
+    source(
+      srcset=imgPath+"background__img1@1x.webp 1x, "+imgPath+"background__img1@2x.webp 2x", 
+      media="(min-width: 425px)", 
+      type="image/webp")
+    source(
+      srcset=imgPath+"background__img1@1x.jpg 1x, "+imgPath+"background__img1@2x.jpg 2x", 
+      media="(min-width: 425px)")
+    source(
+      srcset=imgPath+"background__img1--sm@1x.webp 1x, "+imgPath+"background__img1--sm@2x.webp 2x", 
+      type="image/webp")
+    img.block_1__img(
+      src=imgPath+"background__img1--sm@1x.jpg", 
+      srcset=imgPath+"background__img1--sm@2x.jpg 2x", 
+      alt="happy child with icecream")
+  div.block_1__info
+    h1.block_1__headline We can help.
+    p.block_1__text 
+      | Teaching independence to the lives of the people you love 
+      |  with reliable, individualized emotional and behavioral therapy.
+    button.block_1__btn(type="button") 
+      span.block_1__btn-text FIND HELP HERE
+      

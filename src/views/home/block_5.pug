@@ -1,0 +1,36 @@
+section.block_5
+  -var imgPath = "img/block_5/"
+  .block_5--blue
+    h1.block_5__headline In Home Support
+    .block_5__backgorund
+      picture.block_5__picture
+        source(
+          data-srcset=imgPath+"img1.webp 1x, "+imgPath+"img1@2x.webp 2x", 
+          media="(min-width: 425px)", 
+          type="image/webp")
+        source(
+          data-srcset=imgPath+"img1.png 1x, "+imgPath+"img1@2x.png 2x", 
+          media="(min-width: 425px)")
+        source(
+          data-srcset=imgPath+"img1--sm.webp 1x, "+imgPath+"img1--sm@2x.webp 2x", 
+          type="image/webp")
+        img.block_5__img.lazyload(
+          src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0Pjwvc3ZnPg=="
+          data-src=imgPath+"img1--sm.png", 
+          data-srcset=imgPath+"img1--sm@2x.png 2x", 
+          alt="background icons")
+    .block_5__front
+      picture.block_5__picture
+        source(
+          data-srcset=imgPath+"img2.jpg 1x, "+imgPath+"img2@2x.jpg 2x", 
+          media="(min-width: 425px)")
+        img.block_5__img.lazyload(
+          src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0Pjwvc3ZnPg=="
+          data-src=imgPath+"img2--sm.jpg", 
+          data-srcset=imgPath+"img2--sm@2x.jpg 2x", 
+          alt="wooman with child")
+      .mask-wrapper
+        .mask
+          .mask-item
+          .mask-item
+          .mask-item

@@ -1,0 +1,31 @@
+section.block_6
+  a(name="careers")
+  -var imgPath = "img/block_6/"
+  .block_6-item
+    picture.block_6__picture
+        source(
+          data-srcset=imgPath+"img1.webp 1x, "+imgPath+"img1@2x.webp 2x", 
+          media="(min-width: 425px)", 
+          type="image/webp")
+        source(
+          data-srcset=imgPath+"img1.jpg 1x, "+imgPath+"img1@2x.jpg 2x", 
+          media="(min-width: 425px)")
+        source(
+          data-srcset=imgPath+"img1--sm.webp 1x, "+imgPath+"img1--sm@2x.webp 2x", 
+          type="image/webp")
+        img.block_6__img.lazyload(
+          src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0Pjwvc3ZnPg=="
+          data-src=imgPath+"img1--sm.jpg", 
+          data-srcset=imgPath+"img1--sm@2x.jpg 2x", 
+          alt="groups of people")
+  .block_6-item.block_6__info
+    h3.block_6__headline--small
+      | Be a part of something bigger than yourself. Make a difference.
+    h1.block_6__headline Join Our Team.
+    p.block_6__text
+      | We are always looking for highly motivated individuals who aligned 
+      | with our committment to making a difference in the lives of other 
+      | people. Whether you’re a BCBA or interested in ABA work we are 
+      | interested in talking to you!
+    button.block_6__btn(type="button") 
+      span.block_6__btn-text FIND WHAT’S AVAILABLE

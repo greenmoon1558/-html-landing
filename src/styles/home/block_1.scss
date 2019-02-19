@@ -1,0 +1,59 @@
+.block_1 {
+  position: relative;
+  &__ {
+    &img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      min-height: 66rem;
+    }
+    &info {
+      position: absolute;
+      z-index: 1;
+      top: 32.75vh;
+      margin: 3rem 2.75rem;
+
+      @media all and (max-width: 32rem) {
+        margin: 7.5rem 1rem 3rem;
+      }
+    }
+    &headline {
+      text-shadow: 1px 1px 0 rgba($black, 0.5);
+      color: $white;
+      @include headline();
+      margin: 0;
+      display: inline-block;
+      text-align: center;
+      letter-spacing: 0.15rem;
+      &:after {
+        content: "";
+        display: block;
+        width: 9.6rem;
+        margin: 1.75rem 1.75rem 0px auto;
+        height: 0.4rem;
+        background-color: $blue;
+      }
+    }
+    &text {
+      text-shadow: 1px 1px 0 rgba($black, 0.5);
+      color: $white;
+      @include text();
+      margin: 1.25rem 0 4.25rem;
+      min-width: 45rem;
+      width: 37.5vw;
+      @media all and (max-width: 48rem) {
+         min-width: calc(100vw - 10rem);
+       }
+       @media all and (max-width: 27rem) {
+         min-width: calc(100vw - 2rem);
+       }
+    }
+    @include button();
+    &btn{
+       @media all and (max-width: 32rem) {
+         margin: 0 auto;
+         display: block;
+       }
+    }
+  }
+}
